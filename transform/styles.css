@@ -1,0 +1,44 @@
+.a {
+  margin: 30px;
+  animation: skewAnimation 3s infinite;
+}
+
+.b {
+  margin: 100px;
+  animation: rotateAnimation 5s infinite;
+}
+
+@keyframes skewAnimation {
+  from {
+    transform: skewX(0deg);
+  }
+  to {
+    transform: skewX(20deg);
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+.box {
+  display: grid;
+  width: 240px;
+  height: 240px;
+  margin: 100px;
+  background-color: #495E57;
+  border-radius: 12px;
+  border: solid #6feb6f 4px;
+}
+
+.box:hover {
+  transform: rotateZ(60deg);
+  background-color: #F4CE14;
+  opacity: 0.5;
+  transition: 2s;
+}
