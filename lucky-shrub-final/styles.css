@@ -93,6 +93,12 @@ article > img {
   border-radius: 0.5rem;
 }
 
+article:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
 .welcome {
   background: none;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/welcome.jpg);
